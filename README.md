@@ -1,37 +1,37 @@
-# Course Scheduler
+# Kurs Planlayıcı
 
-This is a web application that allows you to simply create a course schedule for your school.
+Bu, okulunuz için kolayca bir ders programı oluşturmanıza olanak sağlayan bir web uygulamasıdır.
 
-## Screenshots
+## Ekran Görüntüleri
 
 <img src="/screenshots/Screenshot 1.png" width="600"/>
 <img src="/screenshots/Screenshot 2.png" width="600"/>
 <img src="/screenshots/Screenshot 3.png" width="600"/>
 
-## Getting Started
+## Başlarken
 
-### Prerequisites
+### Önkoşullar
 
 - [Node.js](https://nodejs.org/en/)
 - [PostgreSQL](https://www.postgresql.org/)
 
 ### Installing
 
-Clone the repository to your computer.
+Depoyu bilgisayarınıza klonlayın.
 
 ```bash
 git clone https://github.com/aydinkasimoglu/course-scheduler.git
 ```
 
-Install the dependencies.
+Gerekli bağımlılıkları yükleyin.
 
 ```bash
 cd course-scheduler
 npm install
 ```
-### Configuration
+### Yapılandırma
 
-Create a `.env` file in the root directory of the project and add the following variable.
+Projenin kök dizininde bir `.env` dosyası oluşturun ve aşağıdaki değişkeni ekleyin.
 
 ```conf
 DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<db_name>"
@@ -39,20 +39,18 @@ DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<db_name>"
 
 ### Migration
 
-Run the migration. This project uses [Prisma](https://www.prisma.io/) as an ORM. To create the database tables, run the following command.
+Veritabanı tablolarını oluşturmak için migrasyon işlemi çalıştırılmalıdır. Bu projede ORM aracı olarak Prisma (https://www.prisma.io/
+) kullanılmaktadır.
 
 ```bash
 npx prisma migrate dev
 ```
 
-### Running
+### Çalıştırma
 
-Run the development server. The server will run on port 3000 by default.
+Geliştirme sunucusunu çalıştırın. Sunucu varsayılan olarak 3000 numaralı bağlantı noktasında çalışacaktır.
 
 ```bash
 npm run dev
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
